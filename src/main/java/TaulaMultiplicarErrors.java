@@ -1,4 +1,7 @@
 // Activitat 13 — Taula de multiplicar, amb comptador d'errors
+
+import java.util.Scanner;
+
 public class TaulaMultiplicarErrors {
     public static void main(String[] args) {
         // TODO: llegeix un número per teclat i, amb un bucle, pregunta la seva taula
@@ -7,5 +10,31 @@ public class TaulaMultiplicarErrors {
         //   o "incorrecte!" (comptant els errors amb un comptador que s'incrementi
         //   ell mateix d'un en un)
         //   Al final, mostra: "Has comès X errors!"
+        Scanner teclat =new Scanner(System.in); 
+        System.out.println("Introdueix un nombre: ");
+        int n = teclat.nextInt();
+        int i = 1; 
+        int errors = 0;
+
+        System.out.println("Comença la taula del " + n + " ---");
+
+        while (i <= 10) {
+            int resultatCorrecte = n * i;
+
+            System.out.print(n + " X " + i + " = ");
+            int respostaUsuari = teclat.nextInt();
+
+            if (respostaUsuari == resultatCorrecte) {
+                System.out.println(" Correcte! ");
+            } else {
+                System.out.println(" Incorrecte! El resultat era " + resultatCorrecte );
+                errors=errors +1;
+            }
+
+            i=i+1;
+            
+
     }
+    System.out.println("Has comés "+errors+" errors");
+}
 }
