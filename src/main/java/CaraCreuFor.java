@@ -1,7 +1,5 @@
-// Activitat 20 — Cara o creu, 100 llançaments, amb for
-
+// Activitat 20 — Cara o creu, 100 llançaments, amb for¡
 import java.util.Random;
-
 public class CaraCreuFor {
     public static void main(String[] args) {
         // TODO: igual que l'activitat 11, però implementat fent servir un bucle for.

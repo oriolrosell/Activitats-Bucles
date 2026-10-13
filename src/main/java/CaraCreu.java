@@ -1,7 +1,6 @@
 // Activitat 11 — Cara o creu, 100 llançaments
 
 import java.util.Random;
-
 public class CaraCreu {
     public static void main(String[] args) {
         // TODO: simula 100 llançaments d'una moneda amb Random (0 = cara, 1 = creu)

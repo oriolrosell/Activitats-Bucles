@@ -10,7 +10,7 @@ public class NumerosAleatoris {
          while(i<=50){
             int numero = generador.nextInt(1,16);
             System.out.println(numero);
-            i = i + 1;
+            i = i + 1; 
          }
 
     }

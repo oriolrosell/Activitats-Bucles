@@ -17,11 +17,11 @@ public class MajusculaMinuscula {
         if (caracter >= 'A' && caracter <= 'Z') {
             System.out.println("És una lletra majúscula");
         } else if (caracter >= 'a' && caracter <= 'z') {
-            System.out.println("És una lletra minúscula");
+            System.out.println("És una lletra minúscula");  
         } else {
             System.out.println("No és una lletra");
+
         }
-        
         i = i + 1; 
         }    
     }
