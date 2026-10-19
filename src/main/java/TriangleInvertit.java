@@ -4,5 +4,12 @@ public class TriangleInvertit {
         // TODO: amb dos bucles for encaixats, mostra el triangle invertit
         //   d'asteriscs: la primera fila amb 9 asteriscs, i cada fila següent
         //   amb un asterisc menys, fins arribar a 1
+        for (int fila = 9; fila >= 1; fila=fila-1) {
+           
+            for (int columna = 9; columna >= fila; columna=columna-1) {
+                System.out.print("* ");
+            }
+            System.out.println(); 
+        }
     }
 }
