@@ -7,7 +7,8 @@ public class TaulaDel6 {
         int resultat= i*6;
         System.out.println("6 X "+i + " = " +resultat);
         i = i + 1;
-        }      
+        }
+        
 
     }
 }

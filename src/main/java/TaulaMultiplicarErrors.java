@@ -15,26 +15,20 @@ public class TaulaMultiplicarErrors {
         int n = teclat.nextInt();
         int i = 1; 
         int errors = 0;
-
         System.out.println("Comença la taula del " + n + " ---");
-
         while (i <= 10) {
             int resultatCorrecte = n * i;
-
             System.out.print(n + " X " + i + " = ");
             int respostaUsuari = teclat.nextInt();
-
             if (respostaUsuari == resultatCorrecte) {
                 System.out.println(" Correcte! ");
             } else {
                 System.out.println(" Incorrecte! El resultat era " + resultatCorrecte );
                 errors=errors +1;
             }
-
             i=i+1;
             
-
-    }
+        }
     System.out.println("Has comés "+errors+" errors");
-}
+    }
 }
