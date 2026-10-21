@@ -9,6 +9,6 @@ public class TriangleAsteriscs {
                 System.out.print("* ");
             }
             System.out.println(); 
-    }
+        }
     }
 }
