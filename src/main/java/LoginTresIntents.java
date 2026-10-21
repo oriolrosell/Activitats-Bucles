@@ -14,19 +14,35 @@ public class LoginTresIntents {
         //   Si s'acaben els 3 intents sense encertar, mostra "Usuari bloquejat!"
         final String username = "cponts";
         final String password = "qw34T1234";
-        Scanner teclat= new Scanner(System.in);
-        int i=1;
-        while(i<=3){
-         System.out.println("Introdueix el usuari");
-         String usuari= teclat.nextLine();
-         System.out.println("Introdueix la contrasenya");
-         String contrasenya= teclat.nextLine();
-         if (username.equals(usuari)  && password.equals(contrasenya))
-            System.out.println("Pots accedir, contrasenya i usuari correctes");
-        else
-            System.out.println("No pots accedir, contrasenya o usuari incorrectes");
-        i=i+1;
-    }
-        System.out.println("Usuari1 bloquejat!");
+        
+        Scanner teclat = new Scanner(System.in);
+        
+        int i = 1;
+        boolean encertat = false; 
+
+      
+        while (i <= 3 && !encertat) {
+            System.out.println("Introdueix l'usuari:");
+            String usuari = teclat.nextLine();
+            
+            System.out.println("Introdueix la contrasenya:");
+            String contrasenya = teclat.nextLine();
+            
+            if (username.equals(usuari) && password.equals(contrasenya)) {
+                System.out.println("Pots accedir, contrasenya i usuari correctes!");
+                encertat = true; 
+            } else {
+                System.out.println("No pots accedir, contrasenya o usuari incorrectes.");
+            }
+            
+            i = i + 1;
+        }
+
+        if (!encertat) {
+            System.out.println("Usuari bloquejat!");
+        }
+        
+        teclat.close();
     }
 }
+

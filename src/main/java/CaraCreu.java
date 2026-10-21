@@ -25,4 +25,4 @@ public class CaraCreu {
         System.out.println("Cares: " + cares);
         System.out.println("Creus: " + creus);
     }
-    }
+}
